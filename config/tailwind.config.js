@@ -8,9 +8,26 @@ module.exports = {
     './app/views/**/*.{erb,haml,html,slim}'
   ],
   theme: {
-    extend: {
+    theme: {
+      colors: {
+        'primary': '#1fb6ff',
+        'secondary': '#7e5bef',
+        'accent': '#ff49db',
+        'background': '#f3f4f6',
+        'text': '#1f2937',
+      },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
+      extend: {
+        spacing: {
+          '128': '32rem',
+          '144': '36rem',
+        },
+        borderRadius: {
+          '4xl': '2rem',
+        },
       },
     },
   },
